@@ -9,8 +9,12 @@ This work uses different data than Lu et al. It can be found in the [data](data)
 
 ## Code
 All code is contained in the [src](src) folder. A short summary of each file is provided below:
-- Write main file
-- Write runmultiple file...
+- Factors in dataedit.py need to be changed depending on which temperature data is being adjusted. These are temperature, method, and n. This file is used to produce the neural network's input data.
+- Figures used in presentations were created using figures.py.
+- Writh runmultiple.py, multiple functions can be performed in parallel to speed up processing time.
+- Fitting functions were used in fit_n.py. The yield stress and elastic stress files must be cleared before a new yield stress dataset can be created for a material and fit_n.py can be used.
+- 
+
 Besides conventional python packages, the following package by Lu Lu is required to run the programs.
 - [DeepXDE](https://github.com/lululxvi/deepxde) v1.8.2 is used. Some DeepXDE functions may need to be modified if a different version is used.
 
