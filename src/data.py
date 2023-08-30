@@ -106,7 +106,8 @@ class ModelData(object):
         self.read()
 
     def read(self):
-        df = pd.read_csv("../data/model_{}.csv".format(self.model))
+        #df = pd.read_csv("../data/model_{}.csv".format(self.model))
+        df = pd.read_csv("../src/model_{}.csv".format(self.model))
         self.X = df[["C (GPa)", "dP/dh (N/m)", "WpWt"]].values
         if self.yname == "Estar":
             self.y = Etoestar(df["E (GPa)"].values)[:, None]
@@ -138,10 +139,10 @@ class ExpData(object):
 #       df["dP/dh (N/m)"] *= 0.2 * (df["C (GPa)"] / df["Pm (N)"]) ** 0.5 * 10 ** (-1.5)
         
         # Scale dP/dh from hm to hm = 0.2um (For Ti alloys)
-#       df["dP/dh (N/m)"] *= 0.2 / df["hm (um)"]
+        df["dP/dh (N/m)"] *= 0.2 / df["hm (um)"]
 
         # Scale dP/dh from hm to hm = 0.2um (Yanbo's Ti alloys)
-        df["dP/dh (N/m)"] *= 0.2 * 1000 / df["hmax(nm)"]
+#        df["dP/dh (N/m)"] *= 0.2 * 1000 / df["hmax(nm)"]
 
         # Scale c* from Berkovich to Conical
 #        df["dP/dh (N/m)"] *= 1.128 / 1.167
