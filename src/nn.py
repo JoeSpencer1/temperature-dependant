@@ -643,7 +643,6 @@ def validation_temperature(yname, train_size, dataexp, test_names, typ='err', te
             f.write("temperature " + str(temp) + ' [' + teststring + '][' + outstring + ']' + str(train_size) + str(np.mean(ape, axis=0)) + str(np.std(ape, axis=0)) + '\n')
     print("Saved to ", yname, ".dat.")
     np.savetxt(yname + ".dat", np.hstack(y).T)
-'''
 
 def nn1(data):
     
@@ -710,7 +709,7 @@ def validation_mod_exp(yname, train_size, test_name):
             )
             res = dde.utils.apply(nn, (data,))
             print('res = ', res)
-            '''
+            ''''''
             data = dde.data.MfDataSet(
                 X_lo_train=dataexp.X,
                 X_hi_train=datamodel.X,
@@ -720,7 +719,7 @@ def validation_mod_exp(yname, train_size, test_name):
                 y_hi_test=dataexp.y,
                 standardize=True
             )
-            '''
+            ''''''
             #res = dde.utils.apply(mfnn, (data,))
             res = dde.utils.apply(nn, (data,))
             ape.append(res[:2])
@@ -731,13 +730,93 @@ def validation_mod_exp(yname, train_size, test_name):
         #ape.append(res[:2])
         #y.append(res[2])
 
+def validation_exp_cross2(yname, train_size, data1, data2, fac=1, typ='err'):
+    
+    datalow = FEMData(yname, [70])
+    dataBerkovich = BerkovichData(yname)
+    dataexp1 = ExpData("../data/" + data1 + ".csv", yname)
+    dataexp2 = ExpData("../data/" + data2 + ".csv", yname)
 
+    ape = []
+    y = []
+
+    if fac != 1:
+        dataexp1.y *= fac
+        dataexp2.y *= fac
+
+    kf = ShuffleSplit(n_splits=10, train_size=train_size, random_state=0)
+
+    for train_index, _ in kf.split(dataexp1.X):
+        print("\nIteration: {}".format(len(ape)))
+        print(train_index)
+        data = dde.data.MfDataSet(
+            X_lo_train=datalow.X,
+            X_hi_train=np.vstack((dataBerkovich.X, dataexp1.X[train_index])),
+            y_lo_train=datalow.y,
+            y_hi_train=np.vstack((dataBerkovich.y, dataexp1.y[train_index])),
+            X_hi_test=dataexp2.X,
+            y_hi_test=dataexp2.y,
+            standardize=True
+        )
+        res = dde.utils.apply(mfnn, (data,))
+        ape.append(res[:2])
+        y.append(res[2])
+
+    print(yname, "validation_exp_cross2", train_size, np.mean(ape, axis=0), np.std(ape, axis=0))
+    if typ == 'n':
+        with open('Output.txt', 'a') as f:
+            f.write("cross2 raw " + data1 + ' ' + data2 + yname + ' ' + str(fac) + ' ' + str(train_size) + ' [' + str(np.mean(y)) + ' ' + str(np.std(y)) + ']\n')
+    else:
+        with open('Output.txt', 'a') as f:
+            f.write("cross2 " + data1 + ' ' + data2 + yname + ' ' + str(fac) + ' ' + str(train_size) + str(np.mean(ape, axis=0)) + str(np.std(ape, axis=0)) + '\n')
+    print("Saved to ", yname, ".dat.")
+    np.savetxt(yname + ".dat", np.hstack(y).T)
 
     with open('Output.txt', 'a') as f:
         f.write("mod_exp " + test_name + ' ' + yname + ' ' + str(train_size) + ' ' + str(np.mean(ape, axis=0)) + ' ' + str(np.std(ape, axis=0)) + '\n')
     print(yname, train_size)
     print(np.mean(ape), np.std(ape))
+'''
 
+def validation_one(yname, tname, type, train_size, angles=[]):
+    
+    if type == 'FEM':
+        data = FEMDataT(yname, angles)
+    if type == 'Berk':
+        data = BerkovichDataT(yname)
+    if type == 'Exp':
+        print('../data/' + tname + '.csv')
+        data = ExpDataT('../data/' + tname + '.csv', yname)
+    tdata = ExpDataT('../data/' + tname + '.csv', yname)
+
+    if train_size == 80:
+        kf = RepeatedKFold(n_splits=5, n_repeats=2, random_state=0)
+    elif train_size == 90:
+        kf = KFold(n_splits=10, shuffle=True, random_state=0)
+    else:
+        kf = ShuffleSplit(
+            n_splits=10, test_size=len(data.X) - train_size, random_state=0
+        )
+
+    mape = []
+    iter = 0
+    for train_index, test_index in kf.split(data.X):
+        iter += 1
+        print('\nCross-validation iteration: {}'.format(iter))
+
+        X_train, X_test = data.X[train_index], tdata.X[test_index]
+        y_train, y_test = data.y[train_index], tdata.y[test_index]
+
+        data = dde.data.DataSet(
+            X_train=X_train, y_train=y_train, X_test=X_test, y_test=y_test
+        )
+
+        mape.append(dde.utils.apply(nn, (data,)))
+
+    print(mape)
+    print(yname, 'validation_one ', tname, ' ', str(train_size), ' ', np.mean(mape), ' ', np.std(mape))
+    with open('Output.txt', 'a') as f:
+        f.write('validation_one ' + tname + ' ' + yname + ' ' + str(train_size) + ' ' + str(np.mean(mape, axis=0)) + ' ' + str(np.std(mape, axis=0)) + '\n')
 
 def main(argument=None):
 
@@ -747,5 +826,5 @@ def main(argument=None):
     return
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()
