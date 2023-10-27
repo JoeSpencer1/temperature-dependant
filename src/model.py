@@ -227,7 +227,7 @@ def gen_forward():
     with open("model_forward.csv", "w") as f:
         writer = csv.writer(f)
         writer.writerow(["n", "E (GPa)", "sy (GPa)", "C (GPa)", "dP/dh (N/m)", "WpWt"])
-        for _ in range(10000):
+        for _ in range(12000):
             E = random.uniform(10, 210)
             n = random.uniform(0, 0.5)
 #            sigma_y = random.uniform(0.03, 5.3)
@@ -241,7 +241,6 @@ def gen_forward():
 
             _, C, _, dPdh, WpWt, _ = forward_model(E * 1e9, n, sigma_y * 1e9, nu, hm=hm)
             writer.writerow([n, E, sigma_y, C / 1e9, dPdh, WpWt])
-    
 
 
 def gen_inverse():

@@ -26,8 +26,17 @@ def fit_n_Ti(E, sy, s008, s015, s033):
 
 
 def main():
-    
-    # For Al alloys
+    ''' For Ti alloys
+    sy = np.loadtxt("sigma_y.dat")
+    s1 = np.loadtxt("sigma_0.008.dat")
+    s2 = np.loadtxt("sigma_0.015.dat")
+    s3 = np.loadtxt("sigma_0.033.dat")
+    print("sy μ+σ: ", np.mean(sy), np.std(sy))
+    print("s0.8% μ+σ: ", np.mean(s1), np.std(s1))
+    print("s1.5% μ+σ: ", np.mean(s2), np.std(s2))
+    print("s3.3% μ+σ: ", np.mean(s3), np.std(s3))
+    '''
+    ''' For Al alloys'''
     sy = np.loadtxt("sigma_y.dat")
     s1 = np.loadtxt("sigma_0.033.dat")
     s2 = np.loadtxt("sigma_0.066.dat")
@@ -42,10 +51,15 @@ def main():
     s2 = np.mean(s2)
     s3 = np.mean(s3)
 
-    # Al7075
+# Al6061
+#    E = 66.8
+#    (n, R), pcov = fit_n_Al(E, sy, s1, s2, s3)
+# Al7075
     E = 70.1
     (n, R), pcov = fit_n_Al(E, sy, s1, s2, s3)
-
+# Ti alloys
+#    E = 110
+#    (n, R), pcov = fit_n_Ti(E, sy, s1, s2, s3)
     print(n, pcov[0, 0] ** 0.5)
     print(R)
 
