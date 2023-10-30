@@ -34,84 +34,213 @@ validation_one TI33_25a TI33_250a sigma_y 20 6617.4736 4183.5503
 validation_one TI33_25a TI33_25a sigma_y 1 857.2931 515.5357
 validation_one TI33_25a TI33_25a sigma_y 1 992.5752 562.8213
 validation_one TI33_25a TI33_25a sigma_y 1 1016.3317 895.13025
-validation_one TI33_25a TI33_25a sigma_y 4 1 697.2434 409.59674
-validation_one TI33_25a TI33_25a sigma_y 4 1 560.3647 356.8086
-validation_one Ti33_25a TI33_25a sigma_y 4 4 484.24423 348.7431
-validation_one Ti33_25a TI33_25a sigma_y 4 3 365.73795 188.85675
-validation_one Ti33_25a TI33_25a sigma_y 4 2 636.284 329.5422
-validation_one Ti33_25a TI33_25a sigma_y 4 10 816.7292 518.8001
-validation_one Ti33_25a TI33_25a sigma_y 4 5 656.09314 501.66257
-validation_one Ti33_25a TI33_25a sigma_y 4 20 425.8016 181.53055
+validation_one TI33_25a TI33_25a sigma_y 4 32 1 697.2434 409.59674
+validation_one TI33_25a TI33_25a sigma_y 4 32 1 560.3647 356.8086
+validation_one Ti33_25a TI33_25a sigma_y 4 32 4 484.24423 348.7431
+validation_one Ti33_25a TI33_25a sigma_y 4 32 3 365.73795 188.85675
+validation_one Ti33_25a TI33_25a sigma_y 4 32 2 636.284 329.5422
+validation_one Ti33_25a TI33_25a sigma_y 4 32 10 816.7292 518.8001
+validation_one Ti33_25a TI33_25a sigma_y 4 32 5 656.09314 501.66257
+validation_one Ti33_25a TI33_25a sigma_y 4 32 20 425.8016 181.53055
+
+validation_one TI33_25a TI33_25a sigma_y 5 32 1 408.91537 213.70789
+validation_one Ti33_25a TI33_25a sigma_y 5 32 2 295.10284 245.94472
+validation_one Ti33_25a TI33_25a sigma_y 5 32 3 290.97345 165.07294
+validation_one Ti33_25a TI33_25a sigma_y 5 32 4 311.60773 203.32501
+validation_one Ti33_25a TI33_25a sigma_y 5 32 5 364.17368 266.46695
+validation_one Ti33_25a TI33_25a sigma_y 5 32 10 349.5544 179.9441
+validation_one Ti33_25a TI33_25a sigma_y 5 32 20 296.43106 229.23686
+
+validation_one TI33_25a TI33_25a sigma_y 6 32 1 188.72379 267.43564
+validation_one Ti33_25a TI33_25a sigma_y 6 32 2 121.68385 89.27118
+validation_one Ti33_25a TI33_25a sigma_y 6 32 3 140.93689 109.1261
+validation_one Ti33_25a TI33_25a sigma_y 6 32 4 180.25986 72.838394
+validation_one Ti33_25a TI33_25a sigma_y 6 32 5 364.61862 506.69116
+validation_one Ti33_25a TI33_25a sigma_y 6 32 10 156.17932 82.70566
+validation_one Ti33_25a TI33_25a sigma_y 6 32 20 299.17746 145.78099
+
+validation_one TI33_25a TI33_25a sigma_y 7 32 1 109.415115 113.9881
+validation_one Ti33_25a TI33_25a sigma_y 7 32 2 80.756905 79.62107
+validation_one Ti33_25a TI33_25a sigma_y 7 32 3 148.65862 80.55674
+validation_one Ti33_25a TI33_25a sigma_y 7 32 4 121.130104 81.1682
+validation_one Ti33_25a TI33_25a sigma_y 7 32 5 116.27932 95.62222
+validation_one Ti33_25a TI33_25a sigma_y 7 32 10 75.847244 83.53411
+validation_one Ti33_25a TI33_25a sigma_y 7 32 20 271.35956 334.3482
+
+validation_one TI33_25a TI33_25a sigma_y 8 32 1 33.1922 22.521898
+validation_one Ti33_25a TI33_25a sigma_y 8 32 2 72.4807 74.862335
+validation_one Ti33_25a TI33_25a sigma_y 8 32 3 37.575134 26.284475
+validation_one Ti33_25a TI33_25a sigma_y 8 32 4 51.81948 44.68991
+validation_one Ti33_25a TI33_25a sigma_y 8 32 5 64.212975 65.72756
+validation_one Ti33_25a TI33_25a sigma_y 8 32 10 44.543114 32.856937
+validation_one Ti33_25a TI33_25a sigma_y 8 32 20 117.599754 73.44916
+
+validation_one TI33_25a TI33_25a sigma_y 9 32 1 24.310799 12.799104
+validation_one Ti33_25a TI33_25a sigma_y 9 32 2 23.950937 16.752657
+validation_one Ti33_25a TI33_25a sigma_y 9 32 3 17.143969 8.729347
+validation_one Ti33_25a TI33_25a sigma_y 9 32 4 18.679487 14.310697
+validation_one Ti33_25a TI33_25a sigma_y 9 32 5 20.102648 13.37701
+validation_one Ti33_25a TI33_25a sigma_y 9 32 10 14.149679 17.1112
+validation_one Ti33_25a TI33_25a sigma_y 9 32 20 38.699986 34.601536
+
+validation_one TI33_25a TI33_25a sigma_y 9 32 1 20.492596 11.601338
+validation_one Ti33_25a TI33_25a sigma_y 9 32 2 26.340246 31.026478
+validation_one Ti33_25a TI33_25a sigma_y 9 32 3 19.457119 11.560175
+validation_one Ti33_25a TI33_25a sigma_y 9 32 4 24.667578 17.537548
+validation_one Ti33_25a TI33_25a sigma_y 9 32 5 24.164845 18.636044
+validation_one Ti33_25a TI33_25a sigma_y 9 32 10 19.097149 14.327344
+validation_one Ti33_25a TI33_25a sigma_y 9 32 20 18.101965 16.417807
+
+validation_one TI33_25a TI33_25a Estar 9 32 1 6.5431 2.3611872
+validation_one Ti33_25a TI33_25a Estar 9 32 2 5.4277825 1.0533918
+validation_one Ti33_25a TI33_25a Estar 9 32 3 5.691033 1.703785
+validation_one Ti33_25a TI33_25a Estar 9 32 4 4.7096944 0.87942296
+validation_one Ti33_25a TI33_25a Estar 9 32 5 4.7749143 0.87480956
+validation_one Ti33_25a TI33_25a Estar 9 32 10 4.1583886 0.9680226
+validation_one Ti33_25a TI33_25a Estar 9 32 20 4.089126 1.9329202
+
+validation_one TI33_25a TI33_25a sigma_y 9 32 1 34.068943 24.325975
+validation_one Ti33_25a TI33_25a sigma_y 9 32 2 18.617916 18.127224
+validation_one Ti33_25a TI33_25a sigma_y 9 32 3 43.272 33.714092
+validation_one Ti33_25a TI33_25a sigma_y 9 32 4 23.271488 22.803173
+validation_one Ti33_25a TI33_25a sigma_y 9 32 5 21.895184 17.10482
+validation_one Ti33_25a TI33_25a sigma_y 9 32 10 19.204937 17.321714
+validation_one Ti33_25a TI33_25a sigma_y 9 32 20 34.49958 36.6192
+
+validation_one TI33_25a TI33_25a Estar 9 32 1 8.619205 1.6743975
+validation_one Ti33_25a TI33_25a Estar 9 32 2 6.8593493 2.5646875
+validation_one Ti33_25a TI33_25a Estar 9 32 3 6.0983825 1.9379541
+validation_one Ti33_25a TI33_25a Estar 9 32 4 6.091887 1.4813129
+validation_one Ti33_25a TI33_25a Estar 9 32 5 5.298505 1.9537387
+validation_one Ti33_25a TI33_25a Estar 9 32 10 5.2244196 1.9212662
+validation_one Ti33_25a TI33_25a Estar 9 32 20 3.6239312 2.01604
+
+validation_one TI33_25a TI33_25a Estar 8 32 1 8.583571 1.6331549
+validation_one Ti33_25a TI33_25a Estar 8 32 2 6.6766024 2.8439512
+validation_one Ti33_25a TI33_25a Estar 8 32 3 6.4941626 1.6624694
+validation_one Ti33_25a TI33_25a Estar 8 32 4 6.0141764 1.1410301
+validation_one Ti33_25a TI33_25a Estar 8 32 5 5.648947 1.4007543
+validation_one Ti33_25a TI33_25a Estar 8 32 10 5.334618 1.9203273
+validation_one Ti33_25a TI33_25a Estar 8 32 20 4.0527325 1.2483763
+
+validation_one TI33_25a TI33_25a sigma_y 8 32 1 32.850327 15.595499
+validation_one Ti33_25a TI33_25a sigma_y 8 32 2 60.706474 49.453526
+validation_one Ti33_25a TI33_25a sigma_y 8 32 3 45.91546 35.603977
+validation_one Ti33_25a TI33_25a sigma_y 8 32 4 44.777695 21.668268
+validation_one Ti33_25a TI33_25a sigma_y 8 32 5 103.4698 97.39038
+validation_one Ti33_25a TI33_25a sigma_y 8 32 10 32.12853 15.268285
+validation_one Ti33_25a TI33_25a sigma_y 8 32 20 48.095882 36.369766
+
+validation_one TI33_25a TI33_25a Estar 10 1 32 8.515574 1.6212798
+validation_one Ti33_25a TI33_25a Estar 10 2 32 6.0916576 3.20499
+validation_one Ti33_25a TI33_25a Estar 10 3 32 5.6083884 1.9289612
+validation_one Ti33_25a TI33_25a Estar 10 5 32 3.8150456 2.4795344
+validation_one Ti33_25a TI33_25a Estar 10 4 32 5.1417294 2.128867
+validation_one Ti33_25a TI33_25a Estar 10 10 32 4.093955 1.9088715
+validation_one Ti33_25a TI33_25a Estar 10 20 32 3.0656986 1.6489046
+
+validation_one TI33_25a TI33_25a sigma_y 10 1 32 17.644419 11.182769
+validation_one Ti33_25a TI33_25a sigma_y 10 2 32 29.437244 23.765566
+validation_one Ti33_25a TI33_25a sigma_y 10 3 32 10.922123 7.8409767
+validation_one Ti33_25a TI33_25a sigma_y 10 4 32 14.541983 13.479982
+validation_one Ti33_25a TI33_25a sigma_y 10 5 32 7.639744 9.958915
+validation_one Ti33_25a TI33_25a sigma_y 10 10 32 9.241662 6.089439
+validation_one Ti33_25a TI33_25a sigma_y 10 20 32 11.910894 9.490436
+
+validation_one TI33_25a TI33_250a sigma_y 9 32 1 70.592445 37.524284
+validation_one Ti33_25a TI33_250a sigma_y 9 32 2 111.518875 122.85876
+validation_one Ti33_25a TI33_250a sigma_y 9 32 3 89.308266 107.4486
+validation_one Ti33_25a TI33_250a sigma_y 9 32 4 57.65379 39.379807
+validation_one Ti33_25a TI33_250a sigma_y 9 32 5 86.35 70.595024
+validation_one TI33_25a TI33_250a sigma_y 9 32 10 60.131542 49.991756
+validation_one Ti33_25a TI33_250a sigma_y 9 32 20 42.340324 35.622982
+
+validation_one TI33_25a TI33_250a Estar 9 32 1 41.899998 2.1718857
+validation_one Ti33_25a TI33_250a Estar 9 32 2 34.199684 5.2671804
+validation_one Ti33_25a TI33_250a Estar 9 32 3 33.15811 3.6336474
+validation_one Ti33_25a TI33_250a Estar 9 32 4 32.959637 3.6811461
+validation_one Ti33_25a TI33_250a Estar 9 32 5 31.810078 5.2276964
+validation_one TI33_25a TI33_250a Estar 9 32 10 33.03604 4.766307
+validation_one Ti33_25a TI33_250a Estar 9 32 20 37.935387 14.174361
+
+validation_one TI33_25a TI33_25a E_1 9 32 1 8.566756 1.7407784
+validation_one Ti33_25a TI33_25a E_1 9 32 2 6.9145074 2.5701988
+validation_one Ti33_25a TI33_25a E_1 9 32 3 6.1848783 2.323542
+validation_one Ti33_25a TI33_25a E_1 9 32 4 6.1654863 1.2166312
+validation_one Ti33_25a TI33_25a E_1 9 32 5 5.6102333 1.4986318
+validation_one Ti33_25a TI33_25a E_1 9 32 10 4.476147 2.3018079
+validation_one Ti33_25a TI33_25a E_1 9 32 20 4.0989447 1.633914
+
+validation_one TI33_25a TI33_25a E_3 9 32 1 8.556277 1.6779709
+validation_one Ti33_25a TI33_25a E_3 9 32 2 6.3039513 3.0451133
+validation_one Ti33_25a TI33_25a E_3 9 32 3 6.1585975 2.063529
+validation_one Ti33_25a TI33_25a E_3 9 32 4 6.1068254 1.0944157
+validation_one Ti33_25a TI33_25a E_3 9 32 5 4.9047713 1.986913
+validation_one Ti33_25a TI33_25a E_3 9 32 10 5.2897515 1.5402712
+validation_one Ti33_25a TI33_25a E_3 9 32 20 4.3811426 1.8129752
+
+validation_one TI33_25a TI33_250a sigma_y 9 48 1 106.68091 71.809
+validation_one Ti33_25a TI33_250a sigma_y 9 48 2 58.092827 54.334976
+validation_one Ti33_25a TI33_250a sigma_y 9 48 3 56.917805 56.26284
+validation_one Ti33_25a TI33_250a sigma_y 9 48 4 68.109344 45.318226
+validation_one Ti33_25a TI33_250a sigma_y 9 48 5 57.562855 28.28845
+validation_one Ti33_25a TI33_250a sigma_y 9 48 10 25.601084 14.740875
+validation_one Ti33_25a TI33_250a sigma_y 9 48 20 84.75763 64.09356
+
+validation_one TI33_25a TI33_250a Estar 9 48 1 41.479366 2.0367298
+validation_one Ti33_25a TI33_250a Estar 9 48 2 33.239067 8.048332
+validation_one Ti33_25a TI33_250a Estar 9 48 3 32.026833 5.0171366
+validation_one Ti33_25a TI33_250a Estar 9 48 4 31.353703 4.536881
+validation_one Ti33_25a TI33_250a Estar 9 48 5 31.483505 5.749719
+validation_one Ti33_25a TI33_250a Estar 9 48 10 35.12016 6.7015576
+validation_one Ti33_25a TI33_250a Estar 9 48 20 42.376747 15.2354555
 
 
-validation_one TI33_25a TI33_25a sigma_y 5 1 408.91537 213.70789
-validation_one Ti33_25a TI33_25a sigma_y 5 2 295.10284 245.94472
-validation_one Ti33_25a TI33_25a sigma_y 5 3 290.97345 165.07294
-validation_one Ti33_25a TI33_25a sigma_y 5 4 311.60773 203.32501
-validation_one Ti33_25a TI33_25a sigma_y 5 5 364.17368 266.46695
-validation_one Ti33_25a TI33_25a sigma_y 5 10 349.5544 179.9441
-validation_one Ti33_25a TI33_25a sigma_y 5 20 296.43106 229.23686
+validation_one TI33_25a TI33_250a sigma_y 9 32 1 168.42062 240.32188
+validation_one Ti33_25a TI33_250a sigma_y 9 32 2 67.375565 32.01899
+validation_one Ti33_25a TI33_250a sigma_y 9 32 3 123.53137 141.78886
+validation_one Ti33_25a TI33_250a sigma_y 9 32 4 152.6323 136.91542
+validation_one Ti33_25a TI33_250a sigma_y 9 32 5 187.2847 330.77194
+validation_one Ti33_25a TI33_250a sigma_y 9 32 10 97.121 63.82302
+validation_one Ti33_25a TI33_250a sigma_y 9 32 20 52.3555 58.671406
 
-validation_one TI33_25a TI33_25a sigma_y 6 1 188.72379 267.43564
-validation_one Ti33_25a TI33_25a sigma_y 6 2 121.68385 89.27118
-validation_one Ti33_25a TI33_25a sigma_y 6 3 140.93689 109.1261
-validation_one Ti33_25a TI33_25a sigma_y 6 4 180.25986 72.838394
-validation_one Ti33_25a TI33_25a sigma_y 6 5 364.61862 506.69116
-validation_one Ti33_25a TI33_25a sigma_y 6 10 156.17932 82.70566
-validation_one Ti33_25a TI33_25a sigma_y 6 20 299.17746 145.78099
+validation_one TI33_25a TI33_250a Estar 9 32 1 41.319565 1.6541697
+validation_one Ti33_25a TI33_250a Estar 9 32 2 34.81656 6.365257
+validation_one Ti33_25a TI33_250a Estar 9 32 3 33.59124 4.6176863
+validation_one Ti33_25a TI33_250a Estar 9 32 4 31.09554 2.6873071
+validation_one Ti33_25a TI33_250a Estar 9 32 5 33.010456 3.4111104
+validation_one Ti33_25a TI33_250a Estar 9 32 10 32.823563 2.5400345
+validation_one Ti33_25a TI33_250a Estar 9 32 20 40.46569 8.93229
 
-validation_one TI33_25a TI33_25a sigma_y 7 1 109.415115 113.9881
-validation_one Ti33_25a TI33_25a sigma_y 7 2 80.756905 79.62107
-validation_one Ti33_25a TI33_25a sigma_y 7 3 148.65862 80.55674
-validation_one Ti33_25a TI33_25a sigma_y 7 4 121.130104 81.1682
-validation_one Ti33_25a TI33_25a sigma_y 7 5 116.27932 95.62222
-validation_one Ti33_25a TI33_25a sigma_y 7 10 75.847244 83.53411
-validation_one Ti33_25a TI33_25a sigma_y 7 20 271.35956 334.3482
 
-validation_one TI33_25a TI33_25a sigma_y 8 1 33.1922 22.521898
-validation_one Ti33_25a TI33_25a sigma_y 8 2 72.4807 74.862335
-validation_one Ti33_25a TI33_25a sigma_y 8 3 37.575134 26.284475
-validation_one Ti33_25a TI33_25a sigma_y 8 4 51.81948 44.68991
-validation_one Ti33_25a TI33_25a sigma_y 8 5 64.212975 65.72756
-validation_one Ti33_25a TI33_25a sigma_y 8 10 44.543114 32.856937
-validation_one Ti33_25a TI33_25a sigma_y 8 20 117.599754 73.44916
+validation_one TI33_500a TI33_250a sigma_y 9 32 1 84.67531 46.46603
+validation_one Ti33_500a TI33_250a sigma_y 9 32 2 105.72215 74.18298
+validation_one Ti33_500a TI33_250a sigma_y 9 32 3 45.78838 39.670254
+validation_one Ti33_500a TI33_250a sigma_y 9 32 4 69.46997 57.913757
+validation_one Ti33_500a TI33_250a sigma_y 9 32 5 60.99529 35.607227
+validation_one Ti33_500a TI33_250a sigma_y 9 32 10 55.9422 45.5547
+validation_one Ti33_500a TI33_250a sigma_y 9 32 20 49.83204 38.628445
 
-validation_one TI33_25a TI33_25a sigma_y 9 1 24.310799 12.799104
-validation_one Ti33_25a TI33_25a sigma_y 9 2 23.950937 16.752657
-validation_one Ti33_25a TI33_25a sigma_y 9 3 17.143969 8.729347
-validation_one Ti33_25a TI33_25a sigma_y 9 4 18.679487 14.310697
-validation_one Ti33_25a TI33_25a sigma_y 9 5 20.102648 13.37701
-validation_one Ti33_25a TI33_25a sigma_y 9 10 14.149679 17.1112
-validation_one Ti33_25a TI33_25a sigma_y 9 20 38.699986 34.601536
+validation_one TI33_500a TI33_250a Estar 9 32 1 46.683464 6.765701
+validation_one Ti33_500a TI33_250a Estar 9 32 2 38.522774 10.513843
+validation_one Ti33_500a TI33_250a Estar 9 32 3 24.701038 11.301726
+validation_one Ti33_500a TI33_250a Estar 9 32 4 22.080563 10.384357
+validation_one Ti33_500a TI33_250a Estar 9 32 5 22.1474 9.72246
+validation_one Ti33_500a TI33_250a Estar 9 32 10 21.659185 11.2682905
+validation_one Ti33_500a TI33_250a Estar 9 32 20 16.620623 11.029994
 
-validation_one TI33_25a TI33_25a sigma_y 9 1 20.492596 11.601338
-validation_one Ti33_25a TI33_25a sigma_y 9 2 26.340246 31.026478
-validation_one Ti33_25a TI33_25a sigma_y 9 3 19.457119 11.560175
-validation_one Ti33_25a TI33_25a sigma_y 9 4 24.667578 17.537548
-validation_one Ti33_25a TI33_25a sigma_y 9 5 24.164845 18.636044
-validation_one Ti33_25a TI33_25a sigma_y 9 10 19.097149 14.327344
-validation_one Ti33_25a TI33_25a sigma_y 9 20 18.101965 16.417807
+validation_one TI33_250a TI33_250a sigma_y 9 32 1 261.21823 270.2345
+validation_one Ti33_250a TI33_250a sigma_y 9 32 2 25.825928 23.495884
+validation_one Ti33_250a TI33_250a sigma_y 9 32 3 49.60928 65.91791
+validation_one Ti33_250a TI33_250a sigma_y 9 32 4 17.916042 15.266485
+validation_one Ti33_250a TI33_250a sigma_y 9 32 5 17.266216 21.114838
+validation_one Ti33_250a TI33_250a sigma_y 9 32 10 16.254345 16.953184
+validation_one Ti33_250a TI33_250a sigma_y 9 32 20 47.430775 59.20635
 
-validation_one TI33_25a TI33_25a Estar 9 1 6.5431 2.3611872
-validation_one Ti33_25a TI33_25a Estar 9 2 5.4277825 1.0533918
-validation_one Ti33_25a TI33_25a Estar 9 3 5.691033 1.703785
-validation_one Ti33_25a TI33_25a Estar 9 4 4.7096944 0.87942296
-validation_one Ti33_25a TI33_25a Estar 9 5 4.7749143 0.87480956
-validation_one Ti33_25a TI33_25a Estar 9 10 4.1583886 0.9680226
-validation_one Ti33_25a TI33_25a Estar 9 20 4.089126 1.9329202
-
-validation_one TI33_25a TI33_25a sigma_y 9 1 34.068943 24.325975
-validation_one Ti33_25a TI33_25a sigma_y 9 2 18.617916 18.127224
-validation_one Ti33_25a TI33_25a sigma_y 9 3 43.272 33.714092
-validation_one Ti33_25a TI33_25a sigma_y 9 4 23.271488 22.803173
-validation_one Ti33_25a TI33_25a sigma_y 9 5 21.895184 17.10482
-validation_one Ti33_25a TI33_25a sigma_y 9 10 19.204937 17.321714
-validation_one Ti33_25a TI33_25a sigma_y 9 20 34.49958 36.6192
-
-validation_one TI33_25a TI33_25a Estar 9 1 8.619205 1.6743975
-validation_one Ti33_25a TI33_25a Estar 9 2 6.8593493 2.5646875
-validation_one Ti33_25a TI33_25a Estar 9 3 6.0983825 1.9379541
-validation_one Ti33_25a TI33_25a Estar 9 4 6.091887 1.4813129
-validation_one Ti33_25a TI33_25a Estar 9 5 5.298505 1.9537387
-validation_one Ti33_25a TI33_25a Estar 9 10 5.2244196 1.9212662
-validation_one Ti33_25a TI33_25a Estar 9 20 3.6239312 2.01604
+validation_one Ti33_250a TI33_250a Estar 9 32 1 70.95709 31.052818
+validation_one Ti33_250a TI33_250a Estar 9 32 2 7.5985556 10.786752
+validation_one Ti33_250a TI33_250a Estar 9 32 3 8.114405 13.492649
+validation_one Ti33_250a TI33_250a Estar 9 32 4 1.6784289 1.3040054
+validation_one Ti33_250a TI33_250a Estar 9 32 5 2.1151547 1.0622171
+validation_one Ti33_250a TI33_250a Estar 9 32 10 1.8030748 1.1414853
+validation_one Ti33_250a TI33_250a Estar 9 32 20 1.7651669 1.182222

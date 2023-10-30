@@ -29,8 +29,8 @@ def mfgp(data):
     return dde.metrics.get("MAPE")(data.y_hi_test, y_pred)
 
 
-def nn(data, lay=3, ):
-    layer_size = [data.train_x.shape[1]] + [32] * lay + [1]
+def nn(data, lay=9, wid=32):
+    layer_size = [data.train_x.shape[1]] + [wid] * lay + [1]
     activation = "selu"
     initializer = "LeCun normal"
     regularization = ["l2", 0.01]
@@ -87,7 +87,7 @@ def mfnn(data, lay = 2):
         train_state.best_y[1],
     )
 
-def validation_one(yname, trnames, tstname, type, train_size, angles=[], lay = 3):
+def validation_one(yname, trnames, tstname, type, train_size, lay=9, wid=32, angles=[]):
     
     data = []
     if type == 'FEM':
@@ -122,18 +122,14 @@ def validation_one(yname, trnames, tstname, type, train_size, angles=[], lay = 3
             X_train=X_train, y_train=y_train, X_test=X_test, y_test=y_test
         )
 
-        mape.append(dde.utils.apply(nn, (data1, lay, )))
+        mape.append(dde.utils.apply(nn, (data1, lay, wid, )))
 
     print(mape)
     print(yname, 'validation_one ', trnames, ' ', tstname, ' ', str(train_size), ' ', np.mean(mape), ' ', np.std(mape))
     with open('Output.txt', 'a') as f:
-        f.write('validation_one ' + trnames + ' ' +  tstname + ' ' + yname + ' ' + str(lay) + ' ' + str(train_size) + ' ' + str(np.mean(mape, axis=0)) + ' ' + str(np.std(mape, axis=0)) + '\n')
+        f.write('validation_one ' + trnames + ' ' +  tstname + ' ' + yname + ' ' + str(lay) + ' ' + str(wid) + ' ' + str(train_size) + ' ' + str(np.mean(mape, axis=0)) + ' ' + str(np.std(mape, axis=0)) + '\n')
 
 def main(argument=None):
-    '''
-    The main function selects which approach will be used and then performs it. \n
-    Any code aboce the multi-line comment is made by me.
-    '''
     if argument != None:
         exec(argument)
     return

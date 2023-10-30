@@ -75,8 +75,4 @@ for i in range(n):
     res['dP/dh (N/m)'] = dPdh
     res['Wp/Wt'] = WpWt
     res['md'] = dif
-    '''
-    for i in range(n):
-        sy[i] = 0.83
-    res["sy (GPa)"] = sy
-    res.to_csv(title, index=False)
+    ''' 
