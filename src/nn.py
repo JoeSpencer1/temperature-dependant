@@ -95,39 +95,43 @@ def validation_one(yname, trnames, tstname, type, train_size, lay=9, wid=32, ang
     if type == 'Berk':
         data = BerkovichDataT(yname)
     if type == 'Exp':
-        data = ExpDataT(trnames, yname)
+        data = ExpDataT(trnames[0], yname)
     print(data)
     tdata = ExpDataT(tstname, yname)
-    
-    if train_size == 80:
-        kf = RepeatedKFold(n_splits=5, n_repeats=2, random_state=0)
-    elif train_size == 90:
-        kf = KFold(n_splits=10, shuffle=True, random_state=0)
-    else:
-        kf = ShuffleSplit(
-            n_splits=10, test_size=len(data.X) - train_size, random_state=0
-        )
-
     mape = []
-    iter = 0
-    for train_index, test_index in kf.split(data.X):
-        iter += 1
-        print('\nCross-validation iteration: {}'.format(iter))
 
-        print(data.X)
-        X_train, X_test = data.X[train_index], tdata.X[test_index]
-        y_train, y_test = data.y[train_index], tdata.y[test_index]
+    for i in range(0, len(trnames)):
+        if train_size[i] == 80:
+            kf = RepeatedKFold(n_splits=5, n_repeats=2, random_state=0)
+        elif train_size[i] == 90:
+            kf = KFold(n_splits=10, shuffle=True, random_state=0)
+        else:
+            kf = ShuffleSplit(
+                n_splits=10, test_size=len(data.X) - train_size[i], random_state=0
+            )
 
-        data1 = dde.data.DataSet(
-            X_train=X_train, y_train=y_train, X_test=X_test, y_test=y_test
-        )
+        iter = 0
+        for train_index, test_index in kf.split(data.X):
+            iter += 1
+            print('\nCross-validation iteration: {}'.format(iter))
 
-        mape.append(dde.utils.apply(nn, (data1, lay, wid, )))
+            print(data.X)
+            X_train, X_test = data.X[train_index], tdata.X[test_index]
+            y_train, y_test = data.y[train_index], tdata.y[test_index]
 
+            data1 = dde.data.DataSet(
+                X_train=X_train, y_train=y_train, X_test=X_test, y_test=y_test
+            )
+
+            mape.append(dde.utils.apply(nn, (data1, lay, wid, )))
+
+    stsize = ''
+    for digit in train_size:
+        stsize += str(digit) + ' '
     print(mape)
     print(yname, 'validation_one ', trnames, ' ', tstname, ' ', str(train_size), ' ', np.mean(mape), ' ', np.std(mape))
     with open('Output.txt', 'a') as f:
-        f.write('validation_one ' + trnames + ' ' +  tstname + ' ' + yname + ' ' + str(lay) + ' ' + str(wid) + ' ' + str(train_size) + ' ' + str(np.mean(mape, axis=0)) + ' ' + str(np.std(mape, axis=0)) + '\n')
+        f.write('validation_one ' + ' '.join(map(str, trnames)) + ' ' +  tstname + ' ' + yname + ' ' + str(lay) + ' ' + str(wid) + ' [' + stsize + '] ' + str(np.mean(mape, axis=0)) + ' ' + str(np.std(mape, axis=0)) + '\n')
 
 def main(argument=None):
     if argument != None:
