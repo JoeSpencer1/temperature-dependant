@@ -69,16 +69,7 @@ def mfnn(data, lay = 2):
 
     model = dde.Model(data, net)
     model.compile("adam", lr=0.0001, loss="MAPE", metrics=["MAPE", "APE SD"])
-    #
     losshistory, train_state = model.train(epochs=30000)
-    #
-    # checker = dde.callbacks.ModelCheckpoint(
-    #     "model/model.ckpt", verbose=1, save_better_only=True, period=1000
-    # )
-    # losshistory, train_state = model.train(epochs=30000, callbacks=[checker])
-    #
-    #losshistory, train_state = model.train(epochs=5000, model_restore_path="model/model.ckpt-28000")
-    #
 
     dde.saveplot(losshistory, train_state, issave=True, isplot=False)
     return (
@@ -131,7 +122,7 @@ def validation_one(yname, trnames, tstname, type, train_size, lay=9, wid=32, ang
     print(mape)
     print(yname, 'validation_one ', trnames, ' ', tstname, ' ', str(train_size), ' ', np.mean(mape), ' ', np.std(mape))
     with open('Output.txt', 'a') as f:
-        f.write('validation_one ' + ' '.join(map(str, trnames)) + ' ' +  tstname + ' ' + yname + ' ' + str(lay) + ' ' + str(wid) + ' [' + stsize + '] ' + str(np.mean(mape, axis=0)) + ' ' + str(np.std(mape, axis=0)) + '\n')
+        f.write('validation_one [' + ' '.join(map(str, trnames)) + '] ' +  tstname + ' ' + yname + ' ' + str(lay) + ' ' + str(wid) + ' [' + stsize + '] ' + str(np.mean(mape, axis=0)) + ' ' + str(np.std(mape, axis=0)) + '\n')
 
 def main(argument=None):
     if argument != None:
