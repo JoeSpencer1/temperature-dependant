@@ -112,7 +112,7 @@ Ti25250500σ = [326.08405, 180.70842, 192.22061, 246.42114, 166.95808, 277.3227,
 εTi25250500σ = [507.5874, 199.93362, 193.73439, 199.61105, 132.54443, 372.73825, 322.32126]
 
 fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(12, 5))
-ax1.errorbar(n, Ti25250500E, yerr = εTi25250500E, color = 'blue', label = "25, 250, 500˚C")
+ax1.errorbar(n, Ti25250500E, yerr = εTi25250500E, color = 'blue', label = "25$^{\circ}$C, 250$^{\circ}$C, 500$^{\circ}$C")
 ax1.errorbar(n, Ti750E, yerr = εTi750E, color = 'red', label = "750˚C")
 ax1.set_yscale('log')
 ax1.set_ylim([0.5, 300])
@@ -123,11 +123,11 @@ ax1.set_yticklabels([1, 3, 10, 30, 100])
 ax1.legend()
 ax1.set_ylabel("MAPE (%)")
 ax1.set_xlabel("Experimental training data size")
-ax1.annotate("A: $E_{r}$", xy=(0.15, 0.95), xycoords="axes fraction",
+ax1.annotate("A: $E_{r}$ (750$^{\circ}$C)", xy=(0.15, 0.95), xycoords="axes fraction",
               fontsize=12, ha="center",
               bbox=dict(boxstyle="round,pad=0.3", edgecolor="black", facecolor="lightgray"))
 
-ax2.errorbar(n1, Ti25250500σ, yerr = εTi25250500σ, color = 'blue', label = "25, 250, 500˚C")
+ax2.errorbar(n1, Ti25250500σ, yerr = εTi25250500σ, color = 'blue', label = "25$^{\circ}$C, 250$^{\circ}$C, 500$^{\circ}$C")
 ax2.errorbar(n1, Ti750σ, yerr = εTi750σ, color = 'red', label = "750˚C")
 ax2.set_yscale('log')
 ax2.set_ylim([10, 1300])
@@ -140,7 +140,7 @@ ax2.set_ylabel("MAPE (%)")
 ax2.set_xlabel("Experimental training data size")
 plt.subplots_adjust(bottom=0.180)
 fig.tight_layout()
-ax2.annotate("B: $\sigma_{y}$", xy=(0.15, 0.95), xycoords="axes fraction",
+ax2.annotate("B: $\sigma_{y}$ (750$^{\circ}$C)", xy=(0.15, 0.95), xycoords="axes fraction",
               fontsize=12, ha="center",
               bbox=dict(boxstyle="round,pad=0.3", edgecolor="black", facecolor="lightgray"))
 plt.savefig("/Users/Joe/Desktop/figure3.jpeg", dpi=800, bbox_inches="tight")
