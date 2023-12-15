@@ -7,6 +7,9 @@ Lu et al.'s paper can be found [here](https://www.pnas.org/content/early/2020/03
 ## Data
 This work uses different data than Lu et al. It can be found in the [data](data) folder. The data was collected from nanoindentation tests performed on samples of 33% TiAlTa at different temperatures.
 
+## ANSYS model
+The ANSYS model used to generate the FEM data for this work can be found [here](https://uofutah-my.sharepoint.com/:u:/g/personal/u1015301_umail_utah_edu/EbE5QqPiIdtCl0R_IbVgKV4B5_KLSVh4gN5Aj9CqyiMfCA?e=Xzpb2g)
+
 ## Code
 All code is contained in the [src](src) folder. A short summary of each file is provided below:
 - Factors in dataedit.py need to be changed depending on which temperature data is being adjusted. These are temperature, method, and n. This file is used to produce the neural network's input data.
