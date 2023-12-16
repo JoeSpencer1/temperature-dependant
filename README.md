@@ -8,7 +8,7 @@ Lu et al.'s paper can be found [here](https://www.pnas.org/content/early/2020/03
 This work uses different data than Lu et al. It can be found in the [data](data) folder. The data was collected from nanoindentation tests performed on samples of 33% TiAlTa at different temperatures.
 
 ## ANSYS model
-The ANSYS model used to generate the FEM data for this work can be found [here](https://uofutah-my.sharepoint.com/:u:/g/personal/u1015301_umail_utah_edu/EbE5QqPiIdtCl0R_IbVgKV4BTlZEdqVxSSlrNnQJsRl5xg?e=j75hht)
+The ANSYS model used to generate the FEM data for this work can be found [here](https://uofutah-my.sharepoint.com/:u:/g/personal/u1015301_umail_utah_edu/EbE5QqPiIdtCl0R_IbVgKV4BGbNLHTtGdweEfYTi_DCvDw?e=QJieY9)
 
 ## Code
 All code is contained in the [src](src) folder. A short summary of each file is provided below:
